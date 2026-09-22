@@ -10,7 +10,11 @@ import com.bruno.order_api.domain.order.OrderNotFoundException;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(OrderNotFoundException.class)
-    public ResponseEntity<Void> handleOrderNotFound(OrderNotFoundException exception) {
-        return ResponseEntity.notFound().build();
+    public ResponseEntity<ErrorResponse> handleOrderNotFound(
+            OrderNotFoundException exception) {
+
+        return ResponseEntity
+                .status(404)
+                .body(new ErrorResponse(exception.getMessage()));
     }
 }
