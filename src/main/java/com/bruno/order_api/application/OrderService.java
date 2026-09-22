@@ -6,6 +6,7 @@ import java.util.UUID;
 import org.springframework.stereotype.Service;
 
 import com.bruno.order_api.domain.order.Order;
+import com.bruno.order_api.domain.order.OrderNotFoundException;
 import com.bruno.order_api.domain.order.Item;
 import com.bruno.order_api.domain.order.OrderRepository;
 
@@ -32,7 +33,7 @@ public class OrderService {
         Order order = repository.findById(id);
 
         if (order == null) {
-            throw new IllegalArgumentException("Order not found");
+            throw new OrderNotFoundException("Order not found");
         }
 
         return order;
