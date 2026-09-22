@@ -8,6 +8,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.math.BigDecimal;
 import java.util.UUID;
 
+import com.bruno.order_api.domain.money.Money;
+import com.bruno.order_api.domain.product.Product;
+
 class ProductTest {
 
     @Test

@@ -1,6 +1,5 @@
-package com.bruno.order_api.domain;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+package com.bruno.order_api.domain.order;
+import com.bruno.order_api.domain.money.Money;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

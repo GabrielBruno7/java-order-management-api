@@ -1,5 +1,5 @@
-package com.bruno.order_api.domain;
-
+package com.bruno.order_api.domain.product;
+import com.bruno.order_api.domain.money.Money;
 import java.util.UUID;
 
 public class Product {

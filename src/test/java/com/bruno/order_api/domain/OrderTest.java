@@ -2,12 +2,18 @@ package com.bruno.order_api.domain;
 
 import org.junit.jupiter.api.Test;
 
+import com.bruno.order_api.domain.order.Item;
+import com.bruno.order_api.domain.order.Order;
+
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import com.bruno.order_api.domain.money.Money;
+import com.bruno.order_api.domain.product.Product;
 
 class OrderTest {
 

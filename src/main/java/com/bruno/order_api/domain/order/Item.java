@@ -1,4 +1,6 @@
-package com.bruno.order_api.domain;
+package com.bruno.order_api.domain.order;
+
+import com.bruno.order_api.domain.product.Product;
 
 public class Item {
 
